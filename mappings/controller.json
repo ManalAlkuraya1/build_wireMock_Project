@@ -1,0 +1,13 @@
+{
+  "request": {
+    "urlPathPattern": "/v1/*(ar|en)/private/users/(.*)/orderDetails",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "response/orderDetails_{{request.path.[1]}}.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
